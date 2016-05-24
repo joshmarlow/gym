@@ -1,5 +1,13 @@
 from gym.envs.registration import registry, register, make, spec
 
+# Starter environments
+# ----------------------------------------
+
+register(
+    id='KeepItPositive-v0',
+    entry_point='gym.envs.starter:KeepItPositive',
+)
+
 # Algorithmic
 # ----------------------------------------
 

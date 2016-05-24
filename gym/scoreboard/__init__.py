@@ -63,6 +63,14 @@ add_group(
     description='Doom environments based on VizDoom.'
 )
 
+# starter environments
+
+add_group(
+    id='starter',
+    name='Starter',
+    description='Extremly simple environments for agent developers to cut their teeth on',
+)
+
 # classic control
 
 add_task(
@@ -624,6 +632,14 @@ The robot model was originally created by Tassa et al. [Tassa12]_.
 .. [Tassa12] Y Tassa, T Erez, E Todorov, "Synthesis and Stabilization of Complex Behaviors through Online Trajectory Optimization".
 """,
     deprecated=True,
+)
+
+# starter environments
+
+add_task(
+    id='KeepItPositive-v0',
+    group='starter',
+    summary='Keep the integer positive',
 )
 
 registry.finalize()
